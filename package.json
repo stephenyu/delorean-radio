@@ -2,6 +2,7 @@
   "name": "delorean-radio",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "repository": "git@github.com:stephenyu/delorean-radio.git",
   "author": "stephenyu <stephen@canva.com>",
   "license": "MIT",
@@ -12,7 +13,8 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-      "start": "yarn ts-node ./src/app.ts"
+      "start": "yarn ts-node ./src/app.ts",
+      "start-docker": "./bin/start_docker.sh"
   },
   "dependencies": {
     "@types/node": "^13.13.0",

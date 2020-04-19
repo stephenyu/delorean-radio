@@ -25,6 +25,6 @@ COPY --chown=pulseaudio ./src /app/src/
 
 WORKDIR /app
 
-RUN yarn install --prod
+RUN yarn install --prod --pure-lockfile
 
 ENTRYPOINT ["yarn", "start"]
